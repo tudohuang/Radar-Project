@@ -1,6 +1,6 @@
 #ifndef ADC_H
 #define ADC_H
 
-void ADC();
+int readADC(int pin);
 
-#endif
+#endif // ADC_H
