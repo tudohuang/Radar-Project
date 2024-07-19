@@ -2,8 +2,16 @@
 #include <Arduino.h>
 
 void dac(int pin) {
-    for (int i = 0; i < 256; i++) {
+    static unsigned long lastUpdate = 0;
+    static int i = 0;
+    unsigned long currentTime = millis();
+    double deltaSecond = 5000.0/128.0;
+    if (currentTime - lastUpdate >= deltaSecond) {
         dacWrite(pin, i);
-        delayMicroseconds(5000.0 / 128.0);
+        i++;
+        if (i >= 256) {
+            i = 0;
+        }
+        lastUpdate = currentTime;
     }
 }
