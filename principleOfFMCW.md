@@ -26,9 +26,7 @@ FMCW雷達系統的工作原理如下：
 
 - **發射信號（Transmitted signal）:**
 
-  $$
-  s_{tx}(t) = \cos\left(2\pi \left( f_0 t + \frac{B}{2T_{chirp}} t^2 \right) \right)
-  $$
+  $s_{tx}(t) = \cos\left(2\pi \left( f_0 t + \frac{B}{2T_{chirp}} t^2 \right) \right)$
 
   發射信號是頻率隨時間線性變化的 cos 波，其中：
   - $f_0$ 是信號的初始頻率。
@@ -37,9 +35,7 @@ FMCW雷達系統的工作原理如下：
 
 - **接收信號（Received signal）:**
 
-  $$
-  s_{rx}(t) = \cos\left(2\pi \left( f_0 (t - \tau) + \frac{B}{2T_{chirp}} (t - \tau)^2 \right) + 2\pi f_d t \right)
-  $$
+  $s_{rx}(t) = \cos\left(2\pi \left( f_0 (t - \tau) + \frac{B}{2T_{chirp}} (t - \tau)^2 \right) + 2\pi f_d t \right)$
 
   這表示接收信號是經過延遲 $\tau$ 和多普勒頻移 $f_d$ 影響後的 cos 波，其中：
   - $\tau$ 是信號從目標返回的延遲時間。
@@ -50,17 +46,13 @@ FMCW雷達系統的工作原理如下：
 
 - **混頻信號（Beat signal）:**
 
-  $$
-  s_{mix}(t) = s_{tx}(t) \cdot s_{rx}(t)
-  $$
+  $s_{mix}(t) = s_{tx}(t) \cdot s_{rx}(t)$
 
   發射信號和接收信號的乘積，即混頻信號。混頻信號包含了由目標距離和速度引起的頻率變化。
 
 - **差頻頻率（Beat frequency）:**
 
-  $$
-  f_{beat} = \frac{2BR}{cT_{chirp}} + f_d
-  $$
+  $f_{beat} = \frac{2BR}{cT_{chirp}} + f_d$
 
   這是由混頻信號的頻率差得到的頻率，其中：
   - $R$ 是目標的距離。
