@@ -1,4 +1,4 @@
-#include "ADC.h"
+#include "../include/ADC.h"
 #include <Arduino.h>
 
 int readADC(int pin) {
