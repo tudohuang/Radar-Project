@@ -6,7 +6,7 @@ data = pd.read_csv(r'C:\Users\Tudo\Desktop\Radar-Project\Cscripts\clock\timing_d
 print(data.head())
 
 stats = data['Difference (us)'].describe()
-print("\n描述統計信息:")
+print("\n統計資料:")
 print(stats)
 
 mean = data['Difference (us)'].mean()
