@@ -41,7 +41,7 @@ FMCW雷達系統的工作原理如下：
   - $\tau$ 是信號從目標返回的延遲時間。
   - $f_d$ 是由目標運動引起的多普勒頻移。
 
-    多普勒頻移:$f_d = \frac{v_rel}{c}\cdot f_0$
+    多普勒頻移:$$f_d = \frac{v_rel}{c}\cdot f_0$$
 
 
 - **混頻信號（Beat signal）:**
