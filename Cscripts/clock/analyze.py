@@ -1,7 +1,7 @@
 import pandas as pd
 
 # 讀取CSV文件
-data = pd.read_csv(r'C:\Users\Tudo\Desktop\Radar-Project\Cscripts\clock\timing_data.csv')
+data = pd.read_csv(r'timing_data.csv')
 
 print(data.head())
 
